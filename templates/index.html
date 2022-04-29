@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock head %}
+
+{% block body %}
+<div class="container" style="color: aliceblue;">
+  <form action="" method="POST" class="form-register">
+    <div class="form-group">
+
+      <label for="selling price">Present Selling Price(in lakhs)</label>
+
+      <input class="form-control" id="sp" name="sp" placeholder="Selling Price in numbers only" required="required">
+    </div>
+    <div class="form-group">
+
+      <label for="Distance">Distance driven(in kms)</label>
+
+      <input class="form-control" id="kms" name="kms" placeholder="In numbers only" required="'required">
+    </div>
+    <div class="form-group">
+      <label for="2">Fuel Type</label>
+      <select class="form-control" id="fuel" name ="fuel" placeholder="Select the Fuel Type">
+        
+        <option>Petrol</option>
+        <option>Diesel</option>
+        <option>CNG</option>
+
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="Mode">Transmission Mode</label>
+      <select class="form-control" id="Transmission" name="Transmission" required="required">
+        
+        <option>Automatic</option>
+        <option>Manual</option>
+
+
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="stype">Seller Type</label>
+      <select class="form-control" id="selling_type" name="SellType" required="required">
+        
+        <option>Individual</option>
+        <option>Dealership</option>
+
+
+      </select>
+    </div>
+    <div class="form-group">
+
+      <label for="year">Year</label>
+
+      <input type="number" class="form-control" id="Year" name = "Year" placeholder="Year of buying" required="'required">
+    </div>
+    <div class="form-group">
+
+      <label for="Owners">No. of Owners</label>
+
+      <input type="number" class="form-control" id="noowners" name = "Owners" placeholder="Number of Past Owners till Date" required="'required">
+    </div>
+   <br>
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+
+{% endblock body %}

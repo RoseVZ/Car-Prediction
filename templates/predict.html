@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    
+{% endblock head %}
+
+{% block body %}
+
+<div class="container">
+    
+    <div class="card-body" style="background-color: antiquewhite;">
+      <h4 class="card-title">The Predicted Selling Price is</h4>
+     
+      <p class="card-text">The car is predicted to sell at a price of: {{ output }} lakhs</p>
+      <a href="{{ url_for('home') }}" class="btn btn-dark">Go back</a>
+    </div>
+</div>
+{% endblock body %}
